@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
+    <title> Credit Card Validator </title>
+</head>
+
+<body>
+    <div class="card">
+        <form>
+
+            <h1 class="card_title">
+                Enter Credit Card Information
+            </h1>
+
+            <div class="card_row">
+                <div class="card_col">
+                    <label class="card_label" for="cardNumber"> Card Number </label>
+                    <input class="card_input card_input-large" id="cardNumber" type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+                </div>
+
+                <div class="card_col card_chip">
+                    <img src="img/card-chip.svg" alt="chip">
+                </div>
+            </div>
+
+            <div class="card_row">
+                <div class="card_col">
+                    <label class="card_label" for="card_Expr"> Expiration Date </label>
+                    <input class="card_input" id="card_Expr" type="text" placeholder="MM/YY">
+                </div>
+
+                <div class="card_col">
+                    <label class="card_label" for="card_CVC"> CVC/CVV </label>
+                    <input class="card_input" id="card_CVC" type="text" placeholder="***">
+                </div>
+
+                <div class="card_col card_brand">
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
