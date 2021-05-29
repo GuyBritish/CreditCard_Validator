@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: purple url("../../img/background_blue2.svg") center/cover;
+    overflow: hidden;
+}
+
+.card {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px rgb(104, 140, 180), 1px 1px 2px rgb(28, 48, 84);
+    backdrop-filter: blur(0.8rem);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+
+.card_row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.card_col {
+    padding-right: 2rem;
+}
+
+.card_title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #eccc14;
+    margin: 0.5rem 0 1.5rem 0;
+    text-shadow: 0 2px 2px rgba(48, 4, 21, 0.3);
+}
+
+.card_input {
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: solid 0.2rem rgba(255, 255, 255, 0.2);
+    color: ghostwhite;
+    font-size: 1.3rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card_label {
+    display: block;
+    color: aliceblue;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+}
+
+.card_chip {
+    align-self: flex-end;
+}
+
+.card_input-large {
+    font-size: 2rem;
+}
+
+.card_chip img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card_input::placeholder {
+    text-shadow: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.card_input:focus {
+    outline: none;
+    border-color: aliceblue;
+}
