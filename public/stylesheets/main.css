@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: purple url("../../img/background_blue2.svg") center/cover;
+    background: skyblue url("../../img/background_blue2.svg") center/cover;
     overflow: hidden;
 }
 
@@ -21,6 +21,7 @@ body {
     backdrop-filter: blur(0.8rem);
     padding: 1.5rem;
     border-radius: 0.8rem;
+    animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardFloatUp;
 }
 
 .card_row {
@@ -36,7 +37,7 @@ body {
 .card_title {
     font-weight: 600;
     font-size: 2.5rem;
-    color: #eccc14;
+    color: #eca60d;
     margin: 0.5rem 0 1.5rem 0;
     text-shadow: 0 2px 2px rgba(48, 4, 21, 0.3);
 }
@@ -52,14 +53,23 @@ body {
 }
 
 .card_label {
-    display: block;
-    color: aliceblue;
+    display: flex;
+    color: white;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     font-weight: 400;
 }
 
 .card_chip {
     align-self: flex-end;
+}
+
+.card_type {
+    font-size: 3rem;
+    color: whitesmoke;
+    min-width: 100px;
+    min-height: 75px;
+    text-align: right;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .card_input-large {
@@ -79,4 +89,15 @@ body {
 .card_input:focus {
     outline: none;
     border-color: aliceblue;
+}
+
+@keyframes cardFloatUp {
+    from {
+        transform: translateY(100vh);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
